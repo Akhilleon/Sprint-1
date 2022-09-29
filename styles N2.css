@@ -1,0 +1,253 @@
+body {
+    display: grid;
+    gap: 15px;
+    margin: 0 4rem 0 4rem;
+}
+
+header {
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 64%;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    height: 400px;
+}
+
+#hero {
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    background-color: rgba(122, 122, 122, 0.2);
+    margin: 0 100px 0 100px; 
+}
+
+#title {
+    color: rgba(255, 102, 0, 0.5);
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-row: 3 / 3;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(7, 5fr);
+    grid-auto-rows: auto;   
+}
+
+#logo {
+    height: 70px;
+}
+
+.navboxes {
+    padding: 20px
+}
+
+.navlinks {
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.social-icons {
+    padding: 20px;
+}
+
+i {
+    color: rgb(122, 122, 122);
+    padding: 7px;
+}
+
+main {
+    background-color: rgba(122, 122, 122, 0.3);
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+}
+
+article {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
+
+p, #article-heading, #aside-heading {
+    color: rgb(122, 122, 122);
+    text-align: center;
+}
+
+#sakura {
+    display: block;
+    height: 240px;
+    width: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upper-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: whitesmoke;
+}
+
+#comida {
+    display: block;
+    height: 240px;
+    width: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upper-right {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: whitesmoke;
+}
+
+#fuji {
+    display: block;
+    height: 240px;
+    width: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lower-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: whitesmoke;
+}
+
+#noche {
+    display: block;
+    height: 240px;
+    width: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lower-right {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    background-color: whitesmoke;
+}
+
+h3 {
+    display: block;
+    padding: 10px 10px 0px 10px;
+    margin: -5px 25px auto 25px;
+    font-size: 1.5em;
+    background-color: rgba(255, 102, 102, 0.8);
+    color: white;
+}
+
+.article-text {
+    text-align: justify;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+aside {
+    grid-column: 4 / 4;
+    text-align: center;
+}
+
+#aside-heading, #aside-text {
+    color: black;
+    text-align: center;
+}
+
+#last-section {
+    grid-column: 1 / 3;
+    color: black;
+}
+
+footer {
+    background-color: rgba(122, 122, 122, 0.3);
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+}
+
+#footer-div {
+    background-color: rgba(241, 241, 241, 0.856);
+    display: grid;
+}
+
+#footer-text {
+    color: black;
+    padding-left: 10px;
+}
+
+a:hover {
+    background-color: rgba(122, 122, 122, 0.7);
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        background-color: yellow;
+    }
+
+    article {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+
+    aside {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4; 
+    }
+
+    #last-section {
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        background-color: yellow;
+    }
+
+    article {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+    #article-heading {
+        grid-column: 1 / 4;
+    }
+    
+    #upper-left {
+        grid-column: 1 / 4;
+        grid-row: auto;
+    }
+    
+    #upper-right {
+        grid-column: 1 / 4;
+        grid-row: auto;
+    }
+    
+    #lower-left {
+        grid-column: 1 / 4;
+        grid-row: auto;
+    }
+    
+    #lower-right {
+        grid-column: 1 / 4;
+        grid-row: auto;
+    }
+
+    aside {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4; 
+        background-color: darkorange;
+    }
+}
